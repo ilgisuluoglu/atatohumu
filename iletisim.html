@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Katıl | Köklerden Geleceğe</title>
+  <meta name="description" content="Gönüllü ol, işbirliği yap, proje hakkında iletişime geç." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a class="brand" href="index.html"><span class="brand-dot"></span><span>Köklerden Geleceğe</span></a>
+      <button class="nav-toggle" aria-label="Menüyü aç/kapat" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav-links" data-nav>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="proje.html">Proje</a></li>
+        <li><a href="faaliyetler.html">Faaliyetler</a></li>
+        <li><a href="hedef-kitle.html">Hedef Kitle</a></li>
+        <li><a class="active btn btn-small" href="iletisim.html">Katıl</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <div class="container">
+        <p class="tag">Katıl</p>
+        <h1>Gönüllü ol / işbirliği yap</h1>
+        <p class="lead">
+          Eğer üreticiysen, öğrenciysen, kooperatifsen ya da “bu iş önemli” diyorsan — hoş geldin.
+          Aşağıdan bize ulaş.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid two">
+        <article class="card">
+          <h2>Nasıl katkı verebilirsin?</h2>
+          <ul class="bullets">
+            <li>Gönüllü ekip: etkinlik, içerik, saha koordinasyonu</li>
+            <li>Üretici/kooperatif işbirliği</li>
+            <li>Eğitim desteği (ziraat, ekoloji, iletişim)</li>
+            <li>Tohum takas ağına katılım</li>
+          </ul>
+
+          <div class="callout">
+            <strong>Mini uyarı:</strong> “Ben tek başıma ne yaparım?” modu yasak.
+            Topluluk işlerinde tek kişi bile domino taşı gibi çalışır.
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>İletişim Formu</h2>
+          <form class="form" id="contactForm">
+            <label>
+              Ad Soyad
+              <input required name="name" placeholder="Adın soyadın" />
+            </label>
+            <label>
+              E-posta
+              <input required type="email" name="email" placeholder="ornek@mail.com" />
+            </label>
+            <label>
+              Konu
+              <select name="topic">
+                <option>Gönüllü olmak istiyorum</option>
+                <option>Kooperatif / üretici işbirliği</option>
+                <option>Festival / etkinlik desteği</option>
+                <option>Medya / içerik üretimi</option>
+                <option>Diğer</option>
+              </select>
+            </label>
+            <label>
+              Mesaj
+              <textarea required name="message" rows="5" placeholder="Kısaca kendinden ve nasıl katkı vereceğinden bahset"></textarea>
+            </label>
+
+            <button class="btn" type="submit">Gönder (demo)</button>
+            <p class="tiny muted" id="formNote">
+              Bu demo form. Gerçek gönderim için Google Forms / Formspree / Netlify Forms bağlayabiliriz.
+            </p>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="tiny muted">© <span id="yil"></span> • Köklerden Geleceğe</div>
+      <div class="footer-links"><a href="proje.html">Proje</a><a href="faaliyetler.html">Faaliyetler</a></div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
